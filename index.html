@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jordanian Autocoding for the vehicle</title>
+    <style>
+        .plateBorder {
+            border: solid 4px;
+            border-color: #000;
+            border-radius: 0;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="h-100">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <h2 class="navbar-brand" href="#">Autocoding for the vehicle </h2>
+                <span class="text-sm ">developed by saif saidi</span>
+
+            </div>
+        </nav>
+        <div>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+
+                </div>
+            </nav>
+            <div class="container">
+                <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+                        <!-- Application -->
+
+                        <div class="py-3">
+                            <form action="">
+                                <label for="">Select vehicle type <span class="small">(اختار فئة المركبة)</span></label>
+                                <select id="selectVehicleType" class="form-select" aria-label="Select vehicle type">
+                                    <option value="-1"> --- </option>
+                                </select>
+                                <button class="btn border shadow-sm" type="button" id="typeBtn" disabled>select</button>
+                            </form>
+                        </div>
+                        <div id="generation" class="d-none">
+                            <form action="">
+                                <label for="">Select vehicle <span class="small">(اختار المركبة)</span></label>
+                                <select id="selectVehicle" class="form-select" aria-label="Select vehicle type">
+                                    <option value="-1"> --- </option>
+                                </select>
+                                <button class="btn border  shadow-sm" type="button" id="serialBtn"
+                                    disabled>Generate</button>
+                            </form>
+
+                            <div id="Plate" class="d-none p-0">
+                                <div class="container-lg my-3">
+                                    <div class="row align-items-center p-0 plateBorder">
+                                        <div id="bgColorForType" class="col shadow-lg text-left">
+                                            <p>الاردن</h2>
+                                            <h6 id="extraText"></h6>
+                                            <p> JORDAN</h2>
+                                        </div>
+                                        <div class="col-8 text-center">
+                                            <h1 class="shadow-sm p-2"><span id="plateCode"></span> - <span
+                                                    id="serial"></span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="plateInformation" class="mt-5">
+                                    <table class="table table-sm text-center">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>فئة المركبة</th>
+                                                <td id="tdType"></td>
+                                            </tr>
+                                            <tr>
+                                                <th> المركبة</th>
+                                                <td id="tdVehicle"></td>
+                                            </tr>
+                                            <tr>
+                                                <th> نص اضافي</th>
+                                                <td id="tdExtraText"></td>
+                                            </tr>
+                                            <tr>
+                                                <th> الرمز - code</th>
+                                                <td id="tdCode"></td>
+                                            </tr>
+                                            <tr>
+                                                <th> التنسيق</th>
+                                                <td id="tdFormat">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th> متاح</th>
+                                                <td id="tdAvalibale">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button"
+                                                        class="btn btn-sm btn-success border shadow-sm"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                        اضف
+                                                    </button>
+                                                    نعم
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade small" id="staticBackdrop" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">تم</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        تمت اضافة رقم لوحة جديد, هل تريد الطباعة على لوحة؟
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">اغلاق</button>
+                                        <button type="button" id="modelPrint" class="btn btn-primary">اطبع</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Application -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script type="module" src="code.js"></script>
+
+</body>
+
+</html>

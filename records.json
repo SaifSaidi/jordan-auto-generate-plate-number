@@ -1,0 +1,140 @@
+[
+    {
+        "type": "حكومي",
+        "bgColor": "danger",
+        "frontColor": "white",
+        "vehicles": [
+            {
+                "code": 1,
+                "type": "Executive Branch - سلطة التنفيذية",
+                "extraText": "GOV"
+            },
+            {
+                "code": 2,
+                "type": "Legislative Branch - السلطة التشريعية",
+                "extraText": "PAR",
+                "startCodeRange": 2,
+                "endCodeRange": 3
+            },
+            {
+                "code": 4,
+                "type": "Judicial Branch - فرع قضائي",
+                "extraText": "JC"
+            },
+            {
+                "code": 5,
+                "type": "Governmental - حكومي",
+                "extraText": ""
+            },
+            {
+                "code": 6,
+                "type": "Aqaba Free Trade Zone - منطقة العقبة الاقتصادية",
+                "extraText": "AQABA"
+            }
+        ]
+    },
+    {
+        "type": "الهيئـات الدبلوماسيـة و دولية",
+        "bgColor": "warning",
+        "frontColor": "dark",
+        "vehicles": [
+            {
+                "code": 7,
+                "type": "Diplomatic - بعثة دبلوماسية",
+                "extraText": "CD"
+            },
+            {
+                "code": 8,
+                "type": "Temporary - مؤقت",
+                "extraText": "مؤقت",
+                "startCodeRange": 8,
+                "endCodeRange": 9
+            }
+
+            
+        ]
+    },
+    {
+        "type": "مركبات خصوصية",
+        "bgColor": "white",
+        "frontColor": "dark",
+        "vehicles": [
+            {
+                "code": 10,
+                "type": "Private - مركبة خاصة",
+                "extraText": "",
+                "startCodeRange": 10,
+                "endCodeRange": 35
+            },
+            {
+                "code": 36,
+                "type": "Van - شاحنة",
+                "extraText": "",
+                "startCodeRange": 36,
+                "endCodeRange": 37
+            },
+            {
+                "code": 38,
+                "type": "Pick-up Truck - مركبة بك اب",
+                "extraText": "",
+                "startCodeRange": 38,
+                "endCodeRange": 40
+            },
+            {
+                "code": 41,
+                "type": "Light Goods Vehicle - مركبة حمل بضائع",
+                "extraText": "",
+                "startCodeRange": 41,
+                "endCodeRange": 43
+            },
+            {
+                "code": 44,
+                "type": "Agricultural - مركبة زراعية",
+                "extraText": ""
+            },
+            {
+                "code": 45,
+                "type": "Construction Truck - شحنات بناء",
+                "extraText": ""
+            },
+            {
+                "code": 46,
+                "type": "Motorcycle - دراجة نارية",
+                "extraText": "",
+                "startCodeRange": 46,
+                "endCodeRange": 47
+            }
+        ]
+    },
+    {
+        "type": "مركبات عمومية و نقل",
+        "bgColor": "success",
+        "frontColor": "white",
+        "vehicles": [
+            {
+                "code": 50,
+                "type": "Taxi - تاكسي",
+                "extraText": "",
+                "startCodeRange": 50,
+                "endCodeRange": 55
+            },
+            {
+                "code": 56,
+                "type": "City Bus - باص المدينة",
+                "extraText": "",
+                "startCodeRange": 56,
+                "endCodeRange": 57
+            },
+            {
+                "code": 60,
+                "type": "Heavy Goods Vehicle - مركبة حمولة كبيرة",
+                "extraText": ""
+            },
+            {
+                "code": 70,
+                "type": "Rental - اجار",
+                "extraText": ""
+            }
+        ]
+    }
+]
