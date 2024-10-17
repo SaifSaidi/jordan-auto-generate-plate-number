@@ -106,9 +106,7 @@ class App {
 
     Print = () => alert("تتم الطباعة");
 }
-// this for server
-document.getElementsByClassName("disclaimer")[0].remove();
-
+ 
 export const app = new App();
 app.Init();
 
