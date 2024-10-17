@@ -21,6 +21,6 @@ This project is a web-based application for generating vehicle plate numbers acc
 To run the project locally:
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/jordanian-autocoding-for-vehicle.git
-   cd jordanian-autocoding-for-vehicle
+   ```bash[
+   git clone https://github.com/SaifSaidi/Jordan-Auto-Generate-Plate-Number.git
+   run index.html on any server
