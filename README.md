@@ -2,6 +2,11 @@
 
 This project is a web-based application for generating vehicle plate numbers according to Jordanian standards. Users can select the vehicle type, generate a license plate, and view additional details about the plate.
 
+## Demo
+
+![Demo](https://github.com/SaifSaidi/Jordan-Auto-Generate-Plate-Number/blob/main/g1.png?raw=true)
+![Demo](https://github.com/SaifSaidi/Jordan-Auto-Generate-Plate-Number/blob/main/g2.png?raw=true)
+
 ## Features
 
 - **Select Vehicle Type**: Allows users to choose the type of vehicle they want to generate a plate for.
